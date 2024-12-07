@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  logo:string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcOuz17dyeXVHeUdUgaSRcvgDb7hO06tGjw&s";
+  show: boolean = true;
   title = 'amsfront';
   formateur: string = "Mohamed Amine MEZGHICH";
   organisme: string = "SIP ACADEMY";
@@ -16,6 +18,10 @@ export class AppComponent {
   display() {
     alert("Hello SIP Academy");
     console.log("Hello SIP Academy");
+  }
+
+  toggle() {
+    this.show = !this.show;
   }
 
 }

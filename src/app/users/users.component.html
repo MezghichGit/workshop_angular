@@ -10,3 +10,22 @@
     <td>{{etudiant.age}}</td>
     </tr>
 </table>
+
+<hr/>
+
+<table class="table" align="center" border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Street</th>
+    </tr>
+    <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address.street}}</td>
+    </tr>
+</table>

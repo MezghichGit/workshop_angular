@@ -1,3 +1,5 @@
+<img [src]="logo"/>
+
 <h1 align="center">Hello SIP ACADEMY</h1>
 
 <b class="classFormateur">Formatteur : {{formateur}}</b>
@@ -14,3 +16,8 @@
 
 <hr/>
 <app-users></app-users>
+
+<button class="btn btn-primary" (click)="toggle()"> show/hide </button>
+<div style="border:dotted red 2px; background-color: aqua;" *ngIf="show">
+  Une formation sur 3 frameworks : Spring, Angular et React Native!
+</div>
